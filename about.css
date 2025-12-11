@@ -83,9 +83,10 @@
 
 .about-header-grass {
   position: absolute;
-  top: 200px;
+  top: 100px;
   left: 0;
   width: 1200px;
+  height: 800px; 
   z-index: 0;
   animation: fadeBounce 1s ease-out forwards, bounceLoop 3.5s ease-in-out infinite;
 }
@@ -353,7 +354,7 @@
 .christmas-text,
 .cake-text,
 .youtube-text {
-   animation: bounceUpDown 2s ease-in-out infinite alternate;
+   animation: bounceUpDown 3s ease-in-out infinite alternate;
   transform-origin: center center;
 }
 
@@ -365,6 +366,7 @@
     transform: translateY(0);
   }
 }
+
 
 .birthday-cake {
   position: absolute;
@@ -393,11 +395,12 @@
   height: auto;
   z-index: 0;      
 }
-
 .text-msg-1 {
   position: absolute;
   top: 1040px;  
-  left: 690px; 
+  left: 690px;
+  width: 380px; 
+  height: auto;
 }
 
 .birthday-text {
@@ -635,6 +638,7 @@
   position: absolute;
   left: 104px;
   top: 1578px;
+  z-index: 10;
 }
 
 .lydia-text {
@@ -677,23 +681,24 @@
   font-family: "DM Sans", sans-serif; 
 }
 
+
 .text-msg-2 {
   position: absolute; 
-  top: 1557px;       
-  left: 62px;
-  width: 410px;     
-  height: auto;
+  top: 1505px;       
+  left: 60px;
+  width: 410px;
+  height: 350px; 
   z-index: 0;
 }
 
 .text-msg-3 {
   position: absolute; 
   top: 2455px; 
-  right: 120px;
-  width: auto;
+  right: 110px;
+  width: 970px;
+  height: auto;
   z-index: 0;
 }
-
 .folders-svg {
   position: absolute;      
   top: 2620px;       
