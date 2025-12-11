@@ -91,10 +91,10 @@
 }
 
 @keyframes fadeBounce {
-  .from {
+  from {
     transform: translateY(20px);
   }
-  .to {
+  to {
     transform: translateY(0);
   }
 }
@@ -353,15 +353,15 @@
 .christmas-text,
 .cake-text,
 .youtube-text {
-  animation: simpleFadeIn 2s ease-out infinite alternate;
+   animation: bounceUpDown 2s ease-in-out infinite alternate;
   transform-origin: center center;
 }
 
-@keyframes simpleFadeIn {
-  .from {
+@keyframes bounceUpDown {
+  from {
     transform: translateY(-25px);
   }
-  .to {
+  to {
     transform: translateY(0);
   }
 }
@@ -449,10 +449,10 @@
 }
 
 @keyframes tilt {
-  .from {
+  from {
     transform: rotate(0deg);
   }
-  .to {
+  to {
     transform: rotate(5deg);
   }
 }

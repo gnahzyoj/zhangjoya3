@@ -1,0 +1,335 @@
+.container {
+  width: 1200px;
+  margin: 0 auto; 
+  position: relative;
+}
+
+.daily-life-page,
+.daily-life-page * {
+  box-sizing: border-box;
+}
+
+.daily-life-page {
+  padding: 120px 0; 
+  position: relative;
+  height: 2856px;
+}
+
+.daily-sky {
+  background: #6ed1ff;
+  width: 547px;
+  height: 740px;
+  position: absolute;
+  left: 0px;
+  top: 920px;
+}
+
+.daily-grass {
+  background: #a7f871;
+  width: 547px;
+  height: 198.48px;
+  position: absolute;
+  left: 0px;
+  top: 1660px;
+}
+
+.daily-study-background {
+  background: #ff4545;
+  width: 654px;
+  height: 436px;
+  position: absolute;
+  left: 547px;
+  top: 1858px;
+}
+
+.navbar {
+  position: relative;
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  top: 0px; 
+  right: 10px; 
+  z-index: 10;
+}
+
+.joy-zhang,
+.about-me,
+.daily-life,
+.food-essentials {
+  position: absolute;
+  top: 40px;
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif; 
+  letter-spacing: -0.045em;
+  color: #614f4f;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.joy-zhang { left: 77px; }
+.about-me { left: 370px; }
+.daily-life { left: 652px; }
+.food-essentials { left: 927px; }
+
+.navbar-underline {
+  margin-top: -5px;
+  border-style: solid;
+  border-color: #79e92e;
+  border-width: 5px 0 0 0;
+  width: 115px;
+  height: 0px;
+  position: absolute;
+  left: 637px;
+  top: 195px;
+}
+
+.daily-2025 {
+  position: absolute;
+  top: 120px;       
+  left: 0;
+  width: 1175px;    
+  height: auto;
+  z-index: 1;       
+}
+
+.day,
+.my,
+.life,
+.in {
+  color: #614f4f;
+  text-align: left;
+  font-family: "DM Sans", sans-serif; 
+  font-size: 81.04px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 10;
+}
+
+.my { left: 694px; top: 446px; }
+.day { left: 524.93px; top: 283px; }
+.in { left: 428px; top: 451px; }
+.life { left: 522px; top: 555px; }
+
+.clock {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.clock-blue-rect {
+  background: #6ed1ff;
+  width: 50.01px;
+  height: 50.01px;
+  position: absolute;
+  left: 575px;
+  top: 367.3px;
+}
+
+.clockhand-1 {
+  background: #6d5757;
+  width: 7.3px;
+  height: 103px;
+  position: absolute;
+  left: 602px;
+  top: 295.5px;
+  transform-origin: 0 0;
+  transform: rotate(4.5deg);
+}
+
+.clockhand-2 {
+  background: #6d5757;
+  width: 4px;
+  height: 63px;
+  position: absolute;
+  left: 598px;
+  top: 382px;
+  transform: rotate(105deg);
+  transform-origin: 0 0;
+  animation: clockTick 60s linear infinite;
+}
+
+@keyframes clockTick {
+  .from { transform: rotate(0deg); }
+  .to { transform: rotate(360deg); }
+}
+
+.weekday-routine {
+  color: #614f4f;
+  text-align: left;
+  font-family: "StackSansHeadline-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  position: absolute;
+  left: 586px;
+  top: 1450px;
+  width: 524.08px;
+}
+
+.weekday-text {
+  color: #614f4f;
+  text-align: left;
+  font-family: "DM Sans", sans-serif; 
+  font-size: 24px;
+  line-height: 132.02%;
+  font-weight: 300;
+  position: absolute;
+  left: 587px;
+  top: 1526px;
+  width: 560px;
+}
+
+.studying {
+  color: #614f4f;
+  text-align: left;
+  font-family: "StackSansHeadline-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  position: absolute;
+  left: 49px;
+  top: 1899px;
+}
+
+.study-text {
+  color: #614f4f;
+  text-align: left;
+  font-family: "DM Sans", sans-serif; 
+  font-size: 24px;
+  line-height: 132.02%;
+  font-weight: 300;
+  position: absolute;
+  left: 49px;
+  top: 1975px;
+  width: 435px;
+}
+
+.daily-food {
+  position: absolute;    
+  top: 920px;         
+  left: 500px;        
+  width: 600px;  
+  height: auto;
+}
+
+.daily-bus-stop {
+  position: absolute; 
+  top: 1120px;         
+  left: 130px;       
+  width: 300px;     
+  height: auto;
+  z-index: 2;   
+  transform-origin: center bottom;
+  animation: busStopTilt 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes busStopTilt {
+  0% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
+.daily-bus-stop-grass {
+  position: absolute; 
+  top: 1680px;         
+  left: 130px;       
+  width: 300px;     
+  height: auto;
+  z-index: 2;   
+}
+
+.daily-study {
+  position: absolute;   
+  top: 1940px;           
+  left: 760px;         
+  width: 380px;       
+  height: auto;
+  z-index: 10;
+  animation: tiltScaleLoop 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes tiltScaleLoop {
+  0% {
+    transform: rotate(-2deg) scale(1);
+  }
+  100% {
+    transform: rotate(2deg) scale(1.07);
+  }
+}
+
+.daily-footer-divider {
+  width: 1085px;
+  height: auto;
+  position: absolute;
+  left: 60px;
+  top: 2350px;      
+  z-index: 5;
+}
+
+.joy-zhang2 {
+  color: rgba(110, 209, 255, 0.09);
+  text-align: left;
+  font-family: "AdvinePixelDemo-Regular", sans-serif;
+  font-size: 335.5px;
+  font-weight: 400;
+  position: absolute;
+  left: -9px;
+  top: 2380px;
+  width: 1189px;
+  -webkit-text-stroke: 1px rgba(255, 69, 69, 0.22);
+}
+
+.contact-me {
+  color: #ff4545;
+  text-align: left;
+  font-family: "StackSansHeadline-Bold", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  position: absolute;
+  left: 510.75px;
+  top: 2466px;
+  width: 167.51px;
+}
+
+._647-527-1668 {
+  color: #ff4545;
+  text-align: center;
+  font-family: "StackSansHeadline-Regular", sans-serif;
+  font-size: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 530.72px;
+  top: 2527px;
+  width: 117.6px;
+}
+
+.email,
+.linkedin {
+  color: #ff4545;
+  text-align: center;
+  font-family: "StackSansHeadline-Regular", sans-serif;
+  font-size: 16.5px;
+  font-weight: 400;
+  position: absolute;
+  left: 493px;
+  width: 203px;
+}
+
+.email { top: 2556px; }
+.linkedin { top: 2585px; }
+
+.email:hover {
+  text-decoration: underline;
+}
+
+.daily-footer-asterisk {
+  color: #ff4545;
+  text-align: left;
+  font-family: "StackSansHeadline-Regular", sans-serif;
+  font-size: 113px;
+  font-weight: 400;
+  position: absolute;
+  left: 566.21px;
+  top: 2400px;
+  width: 45.48px;
+  height: 87.38px;
+  transform: rotate(-6.4deg);
+  z-index: 10;
+}
